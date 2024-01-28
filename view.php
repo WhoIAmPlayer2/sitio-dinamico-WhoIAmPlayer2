@@ -6,7 +6,8 @@
 
     //Obtener la asistencia por id
     if (!isset($_GET['id'])) {
-        echo "<h1 class='text-center text-danger'>Verifica los detalles e intenta de nuevo</h1>";
+        //echo "<h1 class='text-center text-danger'>Verifica los detalles e intenta de nuevo</h1>";
+        include 'includes/errormessage.php';
     } else {
         $id=$_GET['id'];
         $result=$crud->getAttendeesDetails($id);
@@ -31,6 +32,11 @@
             </p>
         </div>
     </div>
+    <br>
+    
+    <a href="viewrecords.php" class="btn btn-info">Volver a la lista</a>
+    <a href="edit.php?id=<?php echo $result['asistencia_id']?>" class="btn btn-warning">Editar</a>
+    <a onclick="return confirm('¿Estás seguro que deseas borrar este registro?')" href="delete.php?id=<?php echo $result['asistencia_id']?>" class="btn btn-danger">Eliminar</a>
 <?php } ?>
 <?php
     require_once 'includes/footer.php';

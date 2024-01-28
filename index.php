@@ -19,15 +19,15 @@
       <form method="post" action="success.php">
           <div class="form-group">
             <label for="firstname" class="form-label">Nombre(s):</label>
-            <input type="text" class="form-control" id="firstname" name="firstname">
+            <input required type="text" class="form-control" id="firstname" name="firstname">
           </div>
           <div class="form-group">
             <label for="lastname" class="form-label">Apellido(s):</label>
-            <input type="text" class="form-control" id="lastname" name="lastname">
+            <input required type="text" class="form-control" id="lastname" name="lastname">
           </div>
           <div class="form-group">
             <label for="dob" class="form-label">Fecha de nacimiento:</label>
-            <input type="text" class="form-control" id="dob" name="dob">
+            <input required type="text" class="form-control" id="dob" name="dob">
           </div>
           <div class="form-group">
             <label for="specialty" class="form-label">Area de especialidad:</label>
@@ -39,7 +39,7 @@
           </div>
           <div class="form-group">
             <label for="email" class="form-label">Correo Electronico</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+            <input required type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
             <div id="emailHelp" class="form-text">Nosotros nunca compartiremos tu correo con alguien más.</div>
           </div>
           <div class="form-group">
@@ -48,7 +48,7 @@
             <div id="phoneHelp" class="form-text">Nosotros nunca compartiremos tu numero con alguien más.</div>
           </div>
           <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-primary" name="submit">Registrar</button>
+            <button type="submit" class="btn btn-outline-primary" name="submit">Registrar</button>
           </div>
       </form>
 

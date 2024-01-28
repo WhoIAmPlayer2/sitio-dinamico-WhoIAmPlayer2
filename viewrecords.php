@@ -26,6 +26,7 @@
                 <td>
                     <a href="view.php?id=<?php echo $r['asistencia_id']?>" class="btn btn-primary">Ver</a>
                     <a href="edit.php?id=<?php echo $r['asistencia_id']?>" class="btn btn-warning">Editar</a>
+                    <a onclick="return confirm('¿Estás seguro que deseas borrar este registro?')" href="delete.php?id=<?php echo $r['asistencia_id']?>" class="btn btn-danger">Eliminar</a>
                 </td>
             </tr>
         <?php } ?>

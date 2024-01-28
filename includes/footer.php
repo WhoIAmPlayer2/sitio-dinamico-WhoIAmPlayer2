@@ -1,5 +1,5 @@
         <br><br><br>
-        <div class="footer text-center">
+        <div class="footer text-center bg-primary text-white p-2">
           <?php echo 'Copyright &copy'.date("y");?>
         </div>
     </div>
